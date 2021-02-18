@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/1.css">
+</head>
+<style>
+    .mbshow
+    {
+        display: none;
+    }
+    .mbshow1
+    {
+        display: none;
+    }
+    .mbshow2
+    {
+        display: block;
+    }
+    @media only screen and (max-width: 968px)
+    {
+        body
+        {
+            background-color: lightblue;
+        }
+        .mbshow
+        {
+            display: block;
+        }
+        .mbshow1
+        {
+            display: none;
+        }
+        .mbshow2
+        {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 692px)
+    {
+        body
+        {
+            background-color: white;
+        }
+        .mbshow
+        {
+            display: none;
+        }
+
+        .mbshow1
+        {
+            display: block;
+            text-align:center;
+        }
+
+        .mbshow2
+        {
+            display: none;
+        }   
+    }
+</style>
+<body>
+    <h1>
+        <img src="img/0.png" width="600" width="100">
+    </h1>
+
+    <h2>
+        <img src="img/1.png" width="280" width="280" class="mbshow2">
+        <img src="img/2.png" width="300" width="300" class="mbshow">
+        <img src="img/3.png" width="400" width="400" class="mbshow1">
+    </h2>
+
+    <h4 class="mbshow2">
+        Charmander</h4>
+    <h4 class="mbshow">
+        Charmeleon</h4>
+    <h4 class="mbshow1">
+        Charizard</h4>
+    <footer> 
+      
+<style>
+    body
+    {
+        font-family: 'Cute Font' , cursive;
+    }
+    .modal
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 350px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content
+    {
+        background-color: black;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    .close
+    {
+        background-color: black;
+        color: #FFF;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover, .close:focus
+    {
+        background-color: black;
+        color: #FFF;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<button id="myBtn"><h3>Click Me</h3></button>
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Resize browser window to see Charmander's evolution</p>
+  </div>
+
+</div>
+
+<script>
+
+    var modal = document.getElementById("myModal");
+
+
+    var btn = document.getElementById("myBtn");
+
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</footer>
+</body>
+</html>

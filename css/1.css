@@ -1,0 +1,102 @@
+body{
+  background-size:100% 15000%;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-image: url("https://raw.githubusercontent.com/ZeChrales/PogoAssets/master/static_assets/png/Parkscene_Background.png")
+}
+
+h1{
+  text-align:center;
+  margin-top:100px;
+  animation:infinite;
+  animation-name: float;
+  animation-duration: 6s;
+}
+
+h2{
+  position:absolute;
+  top: 60%;
+  left: 45%;
+  text-align:center;
+  animation:infinite;
+  animation-name: float;
+  animation-duration: 5s;
+}
+
+#myBtn{
+  color:lightgrey;
+  font-family: 'Cute Font', cursive;
+  font-size:1.8rem;
+  position: absolute;
+  top: 2%;
+  left: 92%;
+  text-align:center;
+  animation:infinite;
+  animation-name: float;
+  animation-duration: 8s;
+  background-color:transparent;
+  border:none;
+}
+
+h4{
+  font-family: 'Cute Font', cursive;
+  font-size:1.8rem;
+  border-style:solid;
+  border-radius:20px;
+  border-width:2px;
+  background-color:white;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  animation:infinite;
+  animation-name: float;
+  animation-duration: 5s;
+}
+
+p{
+  color:white;
+  text-align:center;
+  font-size:1.7rem;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  25% {
+    transform: translatey(-20px);
+  }
+  50% {
+    transform: translatey(0px);
+  }
+  75% {
+  transform: translatey(-20px);
+  }
+  100%{
+    transform: translatey(0px);
+  }
+
+  
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media only screen and (min-width: 400px) {
+    body { 
+        background-image: url('img_2.png'); 
+    }
+}
